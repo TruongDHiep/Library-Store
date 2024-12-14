@@ -1,0 +1,105 @@
+/* -------------------------------------------------------------------- */
+
+
+.category-list .list-item a {
+    color: black;
+    /* Chỉnh màu cho các liên kết bên trong */
+    text-decoration: none;
+    display: block;
+    padding: 5px 10px;
+    /* Loại bỏ gạch chân cho các liên kết */
+}
+.left-sidebar{
+    background-color: #f2f2f2;
+    padding-right: 10px;
+    width: 25%;
+}
+.left-sidebar .container {
+    /* padding : 10px; */
+    background-color: rgb(255, 255, 255);
+}
+
+.container-iner {
+    text-transform: capitalize;
+    padding: 15px;
+}
+
+.container-iner .category-list {
+    list-style-type: none;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    transition: color 0.3s ease;
+    padding: 10px 0 10px 0px;
+}
+.active_sidebar{
+    background-color: #C92127;
+}
+
+.container-iner .category-list:first-child :hover {
+    color: #C92127;
+    /* background-color: #C2C2C2; */
+}
+.container-iner .category-list :hover {
+    color:#C92127;
+    background-color: #EFEFEF;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.container-iner .list-check-box {
+    padding: 10px 0 10px 20px;
+    font-family: Arial, sans-serif;
+
+}
+
+.container-iner .list-check-box label {
+    line-height: 1.6;
+    margin:5px;
+    cursor: pointer;
+    color: black;
+    /* Màu chữ ban đầu */
+    transition: color 0.2s ease;
+    /* Thiết lập transition */
+}
+
+.container-iner .list-check-box label:hover {
+    color: rgb(177, 133, 50);
+    transition: color 0.3s ease;
+}
+
+.container .container-iner .list-check-box {
+    /* max-height: 140px; */
+    overflow: hidden;
+    /* Ẩn phần vượt quá giới hạn */
+    transition: max-height 0.3s ease;
+    /* Hiệu ứng chuyển đổi */
+}
+
+.container .less-more {
+    text-align: center;
+    cursor: pointer;
+}
+
+.container .less-more .show-more {
+    display: block;
+    padding-bottom: 10px;
+    color: rgb(209, 143, 21);
+}
+
+.container .less-more .show-less {
+    display: none;
+    padding-bottom: 10px;
+    color: rgb(209, 143, 21);
+}
+
+.less-more .show-more .fa-sharp,
+.less-more .show-less .fa-sharp {
+    font-size: 12px;
+    padding-left: 5px;
+}
+
+
+
+/* ----------------------------------------------------------------------------------------- */

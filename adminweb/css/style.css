@@ -1,0 +1,673 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    font-size: 100%;
+    background: #e3dadaeb;
+}
+
+.container {
+    display: flex;
+
+}
+
+.right-content {
+    position: relative;
+    width: 80%;
+    margin-left: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background-color: #E7F7F3;
+    border: solid 1px;
+    border-radius: 20px;
+}
+
+nav {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    left: 0;
+    background: #E7F7F3;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0px 25px 35px rgba(0, 0, 0, 0.1);
+    border: solid 1px;
+    border-radius: 0px 20px 20px;
+}
+
+.logo {
+    text-align: center;
+    display: flex;
+    margin: 10px 0 0 10px;
+
+}
+
+.logo_admin {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.logo span {
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.left-content li .content {
+    position: relative;
+    color: rgb(85, 83, 83);
+    font-size: 14px;
+    display: table;
+    width: 280px;
+    padding: 10px;
+}
+
+
+
+nav .fas {
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+.nav-item-dashboard {
+    position: relative;
+    margin: 20px 0px 0px 20px;
+    padding:0px  0px 0px 20px;
+    bottom:30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.nav-item {
+    position: relative;
+    top: 12px;
+    margin: 10px;
+}
+
+
+.logout {
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+
+/* product-list */
+
+
+
+.productmenu .item{
+
+    width: 280px;
+    font-size:  14px;
+    text-align: left;
+    padding:10px;
+}
+.productmenu .item span{
+
+    color: rgb(85, 83, 83);
+    margin-left: 70px;
+}
+.productmenu .item {
+    display: none;
+}
+
+.productmenu .item.show {
+    display: block;
+}
+
+table {
+    width: 95%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin-left: 1%;
+    margin-top: 2%;
+
+
+}
+
+thead th {
+    position: sticky;
+    top: 0;
+    background-color: #e8e8e8;
+    color: black;
+    font-size: 15px;
+    width: auto;
+    height: 40px;
+}
+
+.pic_list {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    overflow: hidden; /* Ẩn phần vượt ra ngoài của hình ảnh */
+}
+
+.pic_list img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Đưa hình ảnh về giữa của phần tử cha */
+    width: auto;
+    height: 100%; /* Đảm bảo hình ảnh luôn đầy đủ chiều cao */
+}
+
+
+tbody tr td :nth-child(even){
+    text-align: center;
+    background-color: #fff;
+    padding: 10px 20px;
+
+}
+
+
+tr .Masach {
+    width: 10px;
+
+}
+
+.ten_sach {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#delete,
+#edit {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: 10px;
+}
+
+#delete:hover,
+#edit:hover {
+    background-color: #A0F4E7;
+}
+
+.filer {
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    padding: 40px;
+}
+
+.headfiler {
+    display: grid;
+    grid-template-columns: auto 3fr;
+}
+
+.combobox_product {
+    width: 100%;
+    font-size: 50px;
+}
+
+select {
+    width: 100px;
+    height: 30px;
+    border-radius: 30px;
+}
+
+.search_product {
+    padding-top: 30px;
+}
+
+.search_product input {
+    width: 350px;
+    height: 37px;
+    border-radius: 20px;
+}
+
+.search_product .fa {
+    font-size: 27px;
+}
+
+.add_product {
+
+    padding-top: 30px;
+    margin-left: 85%;
+
+}
+
+#btn_addproduct {
+    width: auto;
+    height: 60px;
+    border-radius: 10px;
+    border: 10px;
+    padding: 10px 20px;
+}
+
+.a_addproduct {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#btn_addproduct:hover {
+    background: #A0F4E7;
+}
+/* mô tả sản phẩm product */
+.input-item.form-group {
+    padding-top: 20px;
+}
+/*---------------------------- css dashboard ---------------------------*/
+.header_dashboard {
+    display: flex;
+    margin-top: 2%;
+    width: 100%;
+    height: 150px;
+}
+
+.header_section {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: solid;
+    padding: 20px;
+    margin: 10px;
+    /* Khoảng cách giữa các ô */
+    box-sizing: border-box;
+
+}
+
+.header_section.product {
+    background-color: #ee3d58;
+}
+
+.header_section.orders {
+    background-color: #d33dee;
+}
+
+.header_section.account {
+    background-color: #58ee3d;
+}
+
+.header_section.turnover {
+    background-color: #3deed3;
+}
+
+.header_section i {
+    font-size: 300%;
+    width: 30%;
+    height: 40%;
+}
+
+.header_section .section {
+    display: grid;
+    padding-left: 50%;
+    font-size: 150%;
+}
+
+.bodydashboard {
+    width: 100%;
+    height: 100%;
+}
+
+.Dashboard {
+    background-color: #E7F7F3;
+}
+
+.Dashboard h1 {
+    margin: 2% 2%;
+}
+
+/*-------------Orders------------------*/
+.search_order input {
+    width: 20%;
+    height: 37px;
+    border-radius: 20px;
+
+}
+
+.search_order {
+    display: flex;
+    margin: 40px 20px 20px;
+}
+
+.search_order i {
+    font-size: 30px;
+    margin-left: 5px;
+}
+.search_order .fa {
+    font-size: 27px;
+}
+.editButton{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: 10px;
+}
+.editButton:hover{
+    background-color: #A0F4E7;
+}
+.editFormContainer {
+    padding:50px;
+}
+#editForm {
+    margin-top: 10px;
+}
+.group_btnformporder {
+    display: flex;
+    justify-content: space-evenly;
+}
+.group_btnformporder button {
+    width: 50px;
+    height: 40px;
+    border:10px;
+    border-radius: 10px;
+
+}
+.group_btnformporder button:hover {
+ background: #dae0e7;
+}
+.group_btnformporder button[type="button"] {
+background-color: #007bff;
+color: white;
+}
+.group_btnformporder button[type="cancel"] {
+    background-color: red;
+}
+.group_btnformporder button[type="cancel"]  a{
+    color: white;
+}
+.group_btnformporder button[type="reset"] {
+    background-color: whitesmoke;
+}
+.order_a{
+    color: black;
+}
+    
+/*--------------User--------------*/
+.search_user input {
+    width: 20%;
+    height: 37px;
+    border-radius: 20px;
+}
+
+.search_user {
+    display: flex;
+    margin: 40px 20px 20px;
+}
+
+.search_user i {
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+.add_user {
+
+    padding-top: 30px;
+    margin-left: 85%;
+}
+
+#btn_adduser {
+    width: auto;
+    height: 60px;
+    border-radius: 10px;
+    border: 10px;
+    padding: 5px 10px;
+}
+
+#btn_adduser:hover {
+    background-color: #A0F4E7;
+}
+
+/*--------------Suppliers--------------*/
+.search_suppliers input {
+    width: 100%;
+    height: 37px;
+    border-radius: 20px;
+}
+
+.search_suppliers {
+    display: flex;
+    margin: 40px 20px 20px;
+}
+
+.search_suppliers i {
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+.add_suppliers {
+
+    padding-top: 30px;
+    margin-left: 85%;
+}
+.group_btnformsupplier button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 50px;
+
+    
+}
+.group_btnformsupplier button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.group_btnformsupplier button[type="reset"] {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+#btn_addsuppliers {
+    width: auto;
+    height: 60px;
+    border-radius: 10px;
+    border: 10px;
+    padding: 5px 10px;
+    margin-right: 50px;
+}
+.a_addsupliers{
+    color: black;
+}
+#btn_addsuppliers:hover {
+    background-color: #A0F4E7;
+}
+
+/*--------------Customers--------------*/
+
+.search_customers input {
+    width: 100%;
+    height: 37px;
+    border-radius: 20px;
+}
+
+.search_customers {
+    display: flex;
+    margin: 40px 20px 20px;
+}
+
+.search_customers i {
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+.add_customers {
+
+    padding-top: 30px;
+    margin-left: 85%;
+}
+
+/*------form--------*/
+
+.add-title {
+    margin: 20px; 
+    font-size: 30px;
+}
+
+
+#formContainer {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin: 50px ; 
+}
+
+.right-info {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: white;
+}
+
+.left-info {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.product-image {
+    width: 100%;
+    background-color: #f0f0f0; /* Màu nền */
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex; /* Cho phép mở rộng chiều ngang tự động */
+    flex-wrap: wrap; /* Đảm bảo các hình ảnh xuống dòng khi không đủ không gian */
+    justify-content: center; /* Canh giữa các phần tử con */
+}
+
+.preview-image {
+    width: 200px; /* Kích thước cố định */
+    height: 200px; /* Kích thước cố định */
+    object-fit: cover; /* Đảm bảo hình ảnh đầy đủ kích thước và cắt tỉa */
+    margin: 5px; /* Khoảng cách giữa các hình ảnh */
+}
+
+
+
+
+
+input    {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+
+/* Styling for labels */
+label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* Styling for buttons */
+.group_btnformproduct button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    
+}
+
+/* Styling for button colors */
+.group_btnformproduct button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.group_btnformproduct button[type="reset"] {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    resize: vertical; 
+}
+
+
+/* select */
+
+/* Thiết lập phông chữ và màu sắc chung cho combobox */
+select {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px;
+    width: 200px;
+    height: fit-content;
+}
+
+/* Thiết lập kiểu chữ cho các tùy chọn trong combobox */
+select option {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Thiết lập kiểu chữ và nền cho các tùy chọn khi được chọn */
+select option:checked {
+    background-color: #007bff;
+    color: #fff;
+}
+/*------- phân trang -----*/
+.pagination {
+    margin-top: 20px;
+    display: ruby-text;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 10px;
+    background-color: #f0f0f0;
+    color: #333;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.pagination a:hover {
+    background-color: #ccc;
+}
